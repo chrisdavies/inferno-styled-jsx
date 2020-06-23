@@ -16,12 +16,23 @@ In your babel config, configure styled-jsx [as documented](https://github.com/ve
 ["styled-jsx/babel", { "optimizeForSpeed": true, "styleModule": "inferno-styled-jsx/style" }],
 ```
 
+Styled-jsx does not understand the use of the `class` attribute. So, if you regularly do something like `<a class="foo">...`, you either need to manulaly convert those to className in order to get scoped styles to apply, or you need to use something like `@rollup/plugin-replace`:
+
+```
+replace({
+  delimiters: ['', ''],
+  'class=': 'className=',
+})
+```
+
+That's a bit hacky, as it will possibly apply to situations you don't want, so use that at your own risk. 
+
 ## Example
 
 ```jsx
 function Example() {
   return (
-    <div class="bigtext">
+    <div className="bigtext">
       Hi, there. I'm a large font.
       <style jsx>
         {`
