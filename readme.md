@@ -5,7 +5,7 @@ Write [styled-jsx](https://github.com/zeit/styled-jsx) in Inferno.
 ## Setup
 
 ```
-npm install --save-dev iferno-styled-jsx
+npm install --save-dev inferno-styled-jsx
 ```
 
 ## Configuring
