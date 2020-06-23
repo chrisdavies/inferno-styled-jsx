@@ -1,19 +1,19 @@
-# xferno-styled-jsx
+# inferno-styled-jsx
 
 Write [styled-jsx](https://github.com/zeit/styled-jsx) in Inferno.
 
 ## Setup
 
 ```
-npm install --save-dev xferno-styled-jsx
+npm install --save-dev iferno-styled-jsx
 ```
 
 ## Configuring
 
-In your babel config, configure styled-jsx [as documented](https://github.com/vercel/styled-jsx#configuration-options). Make sure that you configure `styleModule='xferno-styled-jsx/style'` as in the following example:
+In your babel config, configure styled-jsx [as documented](https://github.com/vercel/styled-jsx#configuration-options). Make sure that you configure `styleModule='inferno-styled-jsx/style'` as in the following example:
 
 ```json
-["styled-jsx/babel", { "optimizeForSpeed": true, "styleModule": "xferno-styled-jsx/style" }],
+["styled-jsx/babel", { "optimizeForSpeed": true, "styleModule": "inferno-styled-jsx/style" }],
 ```
 
 ## Example
