@@ -1,0 +1,14 @@
+{
+  "name": "xferno-styled-jsx",
+  "description": "Use styled-jsx with Inferno",
+  "version": "0.0.1",
+  "author": "Christopher Davies <github@christophilus.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "inferno": "7.x"
+  },
+  "dependencies": {
+    "babel-plugin-transform-rename-import": "2.3.0",
+    "styled-jsx": "3.3.0"
+  }
+}
